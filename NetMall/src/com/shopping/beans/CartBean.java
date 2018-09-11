@@ -1,3 +1,4 @@
+// This is my second commit.
 package com.shopping.beans;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class CartBean {
 		int eindex=Integer.parseInt(index);
 		int qua=Integer.parseInt(quantity);
 		CartItemBean cib=null;
-		cib=(CartItemBean)allcartitems.get(eindex);
+		cib=allcartitems.get(eindex);
 		int stock=cib.getEstock();
 		if(qua <= stock)
 		{
@@ -67,7 +68,7 @@ public class CartBean {
 		double csum=0;
 		for(int i=0;i<allcartitems.size();i++)
 		{
-			CartItemBean cib=(CartItemBean)allcartitems.get(i);
+			CartItemBean cib=allcartitems.get(i);
 			csum+=cib.getTotalcost();
 		}
 		setCartsum(csum);
@@ -78,7 +79,7 @@ public class CartBean {
 		 }
 	 public CartItemBean getCartItems(int index) 
 		{
-			CartItemBean cib=(CartItemBean)allcartitems.get(index);
+			CartItemBean cib=allcartitems.get(index);
 			return cib;
 		}
 	 
